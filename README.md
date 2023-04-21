@@ -1,2 +1,2 @@
 # EmployeeManagementProject
-simple CRUD project on Spring Boot using JPA and in-memory db H2
+a simple Spring Boot project enabling CRUD operations via REST endpoints using JPA and in-memory db H2
