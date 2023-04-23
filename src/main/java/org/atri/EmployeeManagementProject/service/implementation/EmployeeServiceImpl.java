@@ -52,8 +52,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public List<Employee> searchByDepartment(String dept) {
-		List<Employee> employees = this.empRepo.findByDept(dept);
-		return employees;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
