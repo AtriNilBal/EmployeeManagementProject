@@ -1,5 +1,6 @@
 package org.atri.EmployeeManagementProject.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,17 +11,17 @@ import io.swagger.v3.oas.models.info.Info;
 @Configuration
 public class OpenApiConfig {
 
+	@Value("${app.swagger.title}")
 	private String title;
 	
+	@Value("${app.swagger.description}")
 	private String description;
 	
+	@Value("${app.swagger.version}")
 	private String version;
 	
 	@Bean
 	public OpenAPI customOpenApi() {
-		this.title = "APIs of EmployeeManagementProject on Swagger";
-		this.description = "powered by Spring Boot Framwork";
-		this.version = "1.1.0";
 		
 		return new OpenAPI()
 				.components(new Components())
