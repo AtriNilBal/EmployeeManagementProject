@@ -10,8 +10,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 	
-	List<Employee> findByDept(String department);
-	
-	@Query(value = "select * from employee where dept =?1", nativeQuery = true)
-	List<Employee> findByDeptNative(String department);
+	/*
+	 * List<Employee> findByDept(String department);
+	 * 
+	 * @Query(value = "select * from employee where dept =?1", nativeQuery = true)
+	 * List<Employee> findByDeptNative(String department);
+	 */
 }
